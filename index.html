@@ -110,7 +110,14 @@
 #dm .calendar .cal small .dmEnglish{margin-top:2px;align-self:start}
 #dm .calendar .cal.oaxacaDay .calPlaceZh,#dm .calendar .cal.oaxacaDay em .dmEnglish{color:#fff0d4}
 </style>
-</head>
+<style>
+.ticker{display:block;overflow:hidden}
+.tickerTrack{display:flex;width:max-content;animation:destinationMarquee 110s linear infinite;will-change:transform}
+.tickerGroup{display:flex;align-items:center;gap:40px;padding-right:40px;flex:none}
+.ticker:hover .tickerTrack,.ticker:focus-within .tickerTrack{animation-play-state:paused}
+@keyframes destinationMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker{overflow-x:auto}.tickerTrack{animation:none;will-change:auto}.tickerGroup[aria-hidden="true"]{display:none}}
+</style></head>
 <body>
 <nav class="nav"><strong>MÉXICO / 2026</strong><div class="navlinks"><a href="#crew">旅伴 CREW</a><div class="navItinerary"><a href="#mexico-intro">行程 ITINERARY</a><div class="navSub"><a href="#mexico-intro">認識墨西哥</a><a href="#itinerary">每日行程</a></div></div><a href="#flights">航班 FLIGHTS</a><a href="#domestic">國內交通 DOMESTIC</a><a href="#dm">亡靈節 DÍA DE MUERTOS</a><a href="#guide">行前指南 GUIDE</a></div><div class="mobileNav" aria-label="手機分類導覽"><a href="#route">路線 ROUTE</a><a href="#crew">旅伴 CREW</a><a href="#mexico-intro">認識墨西哥 MEET MÉXICO</a><a href="#itinerary">每日行程 ITINERARY</a><a href="#flights">航班 FLIGHTS</a><a href="#domestic">國內交通 DOMESTIC</a><a href="#stays">住宿 STAYS</a><a href="#maya">瑪雅火車 TREN MAYA</a><a href="#dm">亡靈節 DÍA DE MUERTOS</a><a href="#guide">行前指南 GUIDE</a></div></nav>
 
@@ -120,7 +127,7 @@
 <div class="heroMeta"><div><small>路線 ROUTE</small><b>TPE → SFO → MEX</b></div><div><small>主題 THEME</small><b>VIVA LA VIDA</b></div><div><small>CREW</small><b>09</b></div><div><small>旅程 TRIP</small><b>12 DAYS</b></div></div>
 </div></header>
 
-<div class="ticker" tabindex="0" role="region" aria-label="行程景點名稱，可左右滑動 / Destinations, scroll horizontally"><span>✦ 墨西哥城 MEXICO CITY</span><span>✦ 瓦哈卡 OAXACA</span><span>✦ 圖雷小鎮 EL TULE</span><span>✦ 石化瀑布 HIERVE EL AGUA</span><span>✦ 米特拉 MITLA</span><span>✦ 阿爾班山 MONTE ALBÁN</span><span>✦ 格拉陶 GUELATAO</span><span>✦ 華雷斯山區 SIERRA DE JUÁREZ</span><span>✦ 梅里達 MÉRIDA</span><span>✦ 普羅格雷索 PROGRESO</span><span>✦ 奇琴伊察 CHICHÉN ITZÁ</span><span>✦ 粉紅湖 LAS COLORADAS</span><span>✦ 穆庫伊切天然井 CENOTE MUCUYCHÉ</span><span>✦ 烏斯馬爾 UXMAL</span><span>✦ 巧克力博物館 CHOCOLATE MUSEUM</span><span>✦ 坎昆 CANCÚN</span></div>
+<div class="ticker" tabindex="0" role="region" aria-label="行程景點名稱，向左循環播放 / Destinations, scrolling left"><div class="tickerTrack"><div class="tickerGroup"><span>✦ 墨西哥城 MEXICO CITY</span><span>✦ 瓦哈卡 OAXACA</span><span>✦ 圖雷小鎮 EL TULE</span><span>✦ 石化瀑布 HIERVE EL AGUA</span><span>✦ 米特拉 MITLA</span><span>✦ 阿爾班山 MONTE ALBÁN</span><span>✦ 格拉陶 GUELATAO</span><span>✦ 華雷斯山區 SIERRA DE JUÁREZ</span><span>✦ 梅里達 MÉRIDA</span><span>✦ 普羅格雷索 PROGRESO</span><span>✦ 奇琴伊察 CHICHÉN ITZÁ</span><span>✦ 粉紅湖 LAS COLORADAS</span><span>✦ 穆庫伊切天然井 CENOTE MUCUYCHÉ</span><span>✦ 烏斯馬爾 UXMAL</span><span>✦ 巧克力博物館 CHOCOLATE MUSEUM</span><span>✦ 坎昆 CANCÚN</span></div><div class="tickerGroup" aria-hidden="true"><span>✦ 墨西哥城 MEXICO CITY</span><span>✦ 瓦哈卡 OAXACA</span><span>✦ 圖雷小鎮 EL TULE</span><span>✦ 石化瀑布 HIERVE EL AGUA</span><span>✦ 米特拉 MITLA</span><span>✦ 阿爾班山 MONTE ALBÁN</span><span>✦ 格拉陶 GUELATAO</span><span>✦ 華雷斯山區 SIERRA DE JUÁREZ</span><span>✦ 梅里達 MÉRIDA</span><span>✦ 普羅格雷索 PROGRESO</span><span>✦ 奇琴伊察 CHICHÉN ITZÁ</span><span>✦ 粉紅湖 LAS COLORADAS</span><span>✦ 穆庫伊切天然井 CENOTE MUCUYCHÉ</span><span>✦ 烏斯馬爾 UXMAL</span><span>✦ 巧克力博物館 CHOCOLATE MUSEUM</span><span>✦ 坎昆 CANCÚN</span></div></div></div>
 
 <section class="section" id="route"><div class="route"><div><div class="sectionNo">00 / 路線總覽 · THE ROUTE</div><h2>路線總覽<br><span style="font-size:.62em;letter-spacing:.02em">THE ROUTE</span></h2><p class="intro">從墨西哥城開始，沿著亡靈節的文化脈絡一路向南，再飛往猶加敦半島。九個人，一條路線，從城市、墓園一路走到加勒比海。<span class="routeEnglish" lang="en">From Mexico City to Oaxaca for Día de Muertos, then onward to Mérida and the Caribbean coast. Nine travelers, one route.</span></p><div class="routeStats"><div class="stat"><b>10.24</b><small>抵達墨西哥城<span lang="en">Arrive in Mexico City</span></small></div><div class="stat"><b>10.27</b><small>夜巴前往瓦哈卡<span lang="en">Night bus to Oaxaca</span></small></div><div class="stat"><b>10.31</b><small>飛往梅里達<span lang="en">Fly to Mérida</span></small></div><div class="stat"><b>11.03</b><small>瑪雅火車 → 坎昆<span lang="en">Tren Maya → Cancún</span></small></div></div></div>
 <button class="routePoster routeZoom" type="button" aria-label="放大路線地圖" aria-haspopup="dialog"><img src="assets/optimized/route-our-route.webp" alt="MÉXICO 2026 OUR ROUTE illustrated route map"><span class="mapHint">點擊放大 ↗</span></button></div></section>
